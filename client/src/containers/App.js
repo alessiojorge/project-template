@@ -11,9 +11,7 @@ class App extends Component {
   render() {
     return (
       <Aux>
-        <header className="header" style={{ animation: 'fadeIn 1s' }}>
-          HEADER
-        </header>
+        <header className="header">HEADER</header>
 
         <main>MAIN</main>
 
