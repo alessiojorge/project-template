@@ -25,7 +25,7 @@
   }
 
   @if $breakpoint == big-device {
-    @media (min-width: 112.5em) {
+    @media (min-width: 120.1em) {
       @content;
     }
   }

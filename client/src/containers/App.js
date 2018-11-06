@@ -18,9 +18,7 @@ class App extends Component {
     return (
       <Aux>
         <Header />
-
         <Content />
-
         <Footer />
       </Aux>
     );
