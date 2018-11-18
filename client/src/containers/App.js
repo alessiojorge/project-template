@@ -26,7 +26,8 @@ class App extends Component {
 }
 
 App.propTypes = {
-  base: propTypes.func.isRequired
+  base: propTypes.object.isRequired,
+  baseActionInitialisation: propTypes.func.isRequired
 };
 
 const mapStateToProps = state => {

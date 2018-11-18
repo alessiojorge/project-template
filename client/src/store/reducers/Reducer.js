@@ -1,13 +1,15 @@
 import * as actions from '../actions/Actions';
 
-const initialState = {};
+const initialState = {
+  base: {}
+};
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.BASE_ACTION:
       return {
         ...state,
-        base: null
+        base: { Hello: 'hello' }
       };
 
     default:
