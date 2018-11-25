@@ -1,0 +1,40 @@
+.menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  height: 5rem;
+  width: 5rem;
+  background-color: $color-grey-light-1;
+  cursor: pointer;
+
+  &__icon {
+    @include centerElement;
+    height: 2px;
+    width: 3rem;
+    background-color: $color-black;
+    transition: transform 0.2s;
+
+    &:first-child {
+      margin-top: -1rem;
+    }
+
+    &:last-child {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.toggle-one {
+  margin-top: 0 !important;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.toggle-two {
+  display: none;
+}
+
+.toggle-three {
+  margin-top: 0 !important;
+  transform: translate(-50%, -50%) rotate(135deg);
+}

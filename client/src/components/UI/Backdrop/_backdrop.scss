@@ -1,0 +1,21 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: $color-white;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+
+  &__container {
+    @include centerElement;
+  }
+}
+
+.backdrop-show {
+  opacity: 1;
+  visibility: visible;
+}

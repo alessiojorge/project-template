@@ -1,8 +1,25 @@
+//  Abstract imports
+
 @import 'abstract/_functions.scss';
 @import 'abstract/_mixins.scss';
 @import 'abstract/_variables.scss';
+
+//  Base imports
 
 @import 'base/_animations.scss';
 @import 'base/_base.scss';
 @import 'base/_typography.scss';
 @import 'base/_utilities.scss';
+
+//  Component imports
+
+@import '../components/01_navigation/_navigation.scss';
+@import '../components/02_header/_header.scss';
+@import '../components/03_content/_content.scss';
+@import '../components/04_footer/_footer.scss';
+
+//  UI element import
+
+@import '../components/UI/Menu/_menu.scss';
+@import '../components/UI/Backdrop/_backdrop.scss';
+@import '../components/UI/Backdrop/Link/_link.scss';

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Aux from '../hoc/Auxillary';
+import React, { Component, Fragment } from 'react';
 
 //  imports for redux and associated functionality
 import { connect } from 'react-redux';
@@ -7,7 +6,7 @@ import * as baseActions from '../store/actions/baseActions';
 import propTypes from 'prop-types';
 
 //  imports for components
-import { Header, Content, Footer } from '../components';
+import { Header, Content, Footer, Navigation } from '../components';
 
 class App extends Component {
   componentDidMount() {
@@ -16,11 +15,12 @@ class App extends Component {
 
   render() {
     return (
-      <Aux>
+      <Fragment>
+        <Navigation />
         <Header />
         <Content />
         <Footer />
-      </Aux>
+      </Fragment>
     );
   }
 }
