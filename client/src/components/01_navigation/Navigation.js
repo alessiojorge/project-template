@@ -1,11 +1,17 @@
 import React from 'react';
 
-import { Menu } from '../UI';
+import { Menu, Logo } from '../UI';
 
 const navigation = () => {
   return (
     <div className="navigation">
-      <Menu />
+      <div className="navigation__sections" />
+      <div className="navigation__sections">
+        <Logo />
+      </div>
+      <div className="navigation__sections">
+        <Menu />
+      </div>
     </div>
   );
 };

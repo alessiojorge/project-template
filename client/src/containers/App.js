@@ -8,6 +8,8 @@ import propTypes from 'prop-types';
 //  imports for components
 import { Header, Content, Footer, Navigation } from '../components';
 
+//import { ParallaxBackground } from '../components/UI';
+
 class App extends Component {
   componentDidMount() {
     this.props.baseActionInitialisation();
@@ -20,6 +22,15 @@ class App extends Component {
         <Header />
         <Content />
         <Footer />
+
+        {/* <div className="parallax" style={{ height: '100vh' }}>
+          <ParallaxBackground
+            src=""
+            offset={100}
+            height="100vh"
+            alt="background"
+          />
+        </div> */}
       </Fragment>
     );
   }

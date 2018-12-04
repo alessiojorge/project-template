@@ -19,17 +19,17 @@ class Menu extends Component {
       <Fragment>
         <Backdrop toggle={this.state.toggle} />
         <div className="menu" onClick={this.toggleHandler}>
-          <div
+          <hr
             className={classnames('menu__icon', {
               'toggle-one': this.state.toggle
             })}
           />
-          <div
+          <hr
             className={classnames('menu__icon', {
               'toggle-two': this.state.toggle
             })}
           />
-          <div
+          <hr
             className={classnames('menu__icon', {
               'toggle-three': this.state.toggle
             })}

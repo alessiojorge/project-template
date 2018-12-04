@@ -6,13 +6,15 @@
   height: 5rem;
   width: 5rem;
   background-color: $color-grey-light-1;
+  @include removeHighlight;
   cursor: pointer;
-
+  z-index: 1000;
   &__icon {
     @include centerElement;
     height: 2px;
     width: 3rem;
-    background-color: $color-black;
+    background: $color-black;
+    border: none;
     transition: transform 0.2s;
 
     &:first-child {

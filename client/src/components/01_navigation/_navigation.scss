@@ -1,4 +1,17 @@
 .navigation {
   position: relative;
   height: 9rem;
+  background: $color-white;
+
+  display: flex;
+
+  &__sections {
+    width: calc(100% / 3);
+
+    &:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

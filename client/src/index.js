@@ -10,6 +10,8 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './store/reducers/Reducer';
 
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
   rootReducer,
@@ -18,7 +20,9 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <ParallaxProvider>
+      <App />
+    </ParallaxProvider>
   </Provider>,
   document.getElementById('root')
 );
