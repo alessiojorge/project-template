@@ -13,7 +13,7 @@ if (process.env.NODE_ENV !== 'production') {
 
   //  allows for http access when developing locally
   const cors = require('cors');
-  app.use(cors({ origin: 'http://localhost:3000' }));
+  app.use(cors());
 } else {
   // Set a static folder
 
