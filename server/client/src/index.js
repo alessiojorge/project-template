@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './sass/main.scss';
-import './css/Iconsets/styles.css';
 import App from './containers/App';
 
 //  Redux
@@ -26,3 +25,7 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
+if (module.hot) {
+  module.hot.accept();
+}
