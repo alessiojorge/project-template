@@ -2,7 +2,7 @@
   text-decoration: none;
 
   &__title {
-    color: var(--color-black);
+    color: $color-black;
     text-align: center;
     font-size: 5rem;
     padding: 1.5rem;
@@ -11,6 +11,6 @@
 }
 
 .link:hover .link__title {
-  color: var(--color-grey-dark-1);
+  color: $color-grey-dark-1;
   padding: 3rem;
 }
