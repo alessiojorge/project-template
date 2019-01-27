@@ -1,16 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import beyState from '../bey/state';
 import { Subscribe } from 'bey';
+
+import { Menu } from '../components/UI';
 
 class App extends Component {
   render() {
     return (
       <Subscribe to={beyState} on={state => state.menuToggle}>
         {menuToggle => (
-          <div>
+          <Fragment>
             <span>{menuToggle ? 'true' : 'false'}</span>
-          </div>
+            <Menu />
+          </Fragment>
         )}
       </Subscribe>
     );

@@ -5,6 +5,12 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin flexCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin removeHighlight {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
